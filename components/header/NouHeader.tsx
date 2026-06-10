@@ -40,7 +40,7 @@ const getTabLabel = (tab: { title?: string; pageUrl?: string; url?: string }) =>
     return tab.pageUrl || tab.url || 'New Tab'
   }
 }
- <iframe src="http://kupeer.com/mugame3/?" height="160" width="200" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
+
 const TabFavicon: React.FC<{ tab: Tab; color: string }> = ({ tab, color }) => {
   const [errored, setErrored] = useState(false)
   useEffect(() => setErrored(false), [tab.icon])
