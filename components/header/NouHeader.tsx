@@ -48,7 +48,7 @@ const TabFavicon: React.FC<{ tab: Tab; color: string }> = ({ tab, color }) => {
     return (
       <Image
         source={tab.icon}
-        style={{ width: 18, height: 18 }}
+        style={{ width: 58, height: 58 }}
         contentFit="contain"
         onError={() => setErrored(true)}
       />
