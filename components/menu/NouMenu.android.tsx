@@ -10,7 +10,7 @@ type Anchor = {
   x: number
   y: number
   width: number
-  height: number
+  height: 100
 }
 
 export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColor?: string }> = ({ items, trigger, triggerColor }) => {
