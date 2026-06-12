@@ -28,7 +28,7 @@ export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColo
     if (item.kind === 'label') return 32
     return item.description ? 56 : 44
   }
-  const menuHeight = items.reduce((total, item) => total + getRowHeight(item), 86)
+  const menuHeight = items.reduce((total, item) => total + getRowHeight(item), 16)
 
   const openMenu = () => {
     triggerRef.current?.measureInWindow((x, y, width, height) => {
@@ -80,7 +80,7 @@ export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColo
         <View className="flex-1" pointerEvents="box-none">
           <Pressable className="absolute inset-0" onPress={closeMenu} />
           <View
-            className="absolute rounded-xl py-2 border border-zinc-300 dark:border-zinc-700"
+            className="absolute rounded-xl py-2 border border-zinc-600 dark:border-zinc-700"
             style={{
               top,
               left,
