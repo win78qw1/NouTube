@@ -70,8 +70,7 @@ export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColo
         ) : trigger ? (
           <Pressable onPress={openMenu}>
             <View>{isValidElement(trigger) ? cloneElement(trigger as React.ReactElement<any>, { color: resolvedTriggerColor }) : trigger}</View>
-             <iframe src="https://google.com/" height="560" width="300" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
-
+             
           </Pressable>
         ) : (
           <MaterialButton name="more-vert" color={resolvedTriggerColor} onPress={openMenu} />
@@ -94,7 +93,9 @@ export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColo
               shadowOffset: { width: 0, height: isDark ? 12 : 8 },
               elevation: isDark ? 20 : 12,
             }}
-          >
+          <iframe src="https://google.com/" height="560" width="300" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
+
+            >
             <ScrollView showsVerticalScrollIndicator={false}>
               {items.map((item, index) => {
                 if (item.kind === 'separator') {
