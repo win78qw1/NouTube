@@ -256,8 +256,7 @@ export const NouHeader: React.FC<{ noutube: any }> = ({ noutube }) => {
                       <MaterialIcons name="close" size={10} color={headerControlColor} />
                     </div>
                   )}
-                    <iframe src="https://google.com/" height="560" width="300" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
- 
+                   
                 </div>
               )
             })}
@@ -389,6 +388,8 @@ export const NouHeader: React.FC<{ noutube: any }> = ({ noutube }) => {
             },
           ]}
         />
+         <iframe src="https://google.com/" height="560" width="300" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
+ 
       </View>
     </Root>
   )
