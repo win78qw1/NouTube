@@ -10,7 +10,7 @@ type Anchor = {
   x: number
   y: number
   width: number
-  height: 100
+  height: number
 }
 
 export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColor?: string }> = ({ items, trigger, triggerColor }) => {
@@ -28,7 +28,7 @@ export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColo
     if (item.kind === 'label') return 32
     return item.description ? 56 : 44
   }
-  const menuHeight = items.reduce((total, item) => total + getRowHeight(item), 16)
+  const menuHeight = items.reduce((total, item) => total + getRowHeight(item), 86)
 
   const openMenu = () => {
     triggerRef.current?.measureInWindow((x, y, width, height) => {
