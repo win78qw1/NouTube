@@ -6,7 +6,7 @@ const makeMenuItem = ({ icon, label }: { icon: string; label: string }) =>
   nouPolicy.createHTML(/* HTML */ `
     <button class="menu-item-button" style="display: flex; align-items: center; width: 100%; padding: 0 16px; min-height: 48px; background: none; border: none; font-family: inherit; font-size: 14px; text-align: left; cursor: pointer;">
       <c3-icon fill-icon="false" style="margin-right: 16px; flex-shrink: 0; width: 24px; height: 24px;">
-        <span class="yt-icon-shape yt-spec-icon-shape" style="width: 24px; height: 24px; display: block;">
+        <span class="yt-icon-shape yt-spec-icon-shape" style="width: 24px; height: 84px; display: block;">
           <div style="width: 24px; height: 24px; display: block; fill: currentcolor;">${icon}</div>
         </span>
       </c3-icon>
@@ -24,7 +24,7 @@ const makeListItem = ({ icon, label }: { icon: string; label: string }) =>
             role="img"
             style="width: 24px; height: 24px; display: block;"
           >
-            <span class="yt-icon-shape ytSpecIconShapeHost" style="width: 24px; height: 24px; display: block;">
+            <span class="yt-icon-shape ytSpecIconShapeHost" style="width: 24px; height: 84px; display: block;">
               <div style="width: 24px; height: 24px; display: block; fill: currentcolor;">${icon}</div>
             </span>
           </span>
@@ -49,9 +49,9 @@ const makePaperItem = ({ icon, label }: { icon: string; label: string }) =>
     <tp-yt-paper-item
       class="style-scope ytd-menu-service-item-renderer"
       role="option"
-      style="display: flex; align-items: center; width: 100%; padding: 0 16px; min-height: 40px; cursor: pointer;"
+      style="display: flex; align-items: center; width: 100%; padding: 0 16px; min-height: 90px; cursor: pointer;"
     >
-      <yt-icon class="style-scope ytd-menu-service-item-renderer" style="margin-right: 16px; flex-shrink: 0; width: 24px; height: 24px;">
+      <yt-icon class="style-scope ytd-menu-service-item-renderer" style="margin-right: 16px; flex-shrink: 0; width: 24px; height: 84px;">
         <span class="yt-icon-shape style-scope yt-icon ytSpecIconShapeHost" style="width: 24px; height: 24px; display: block;">
           <div style="width: 24px; height: 24px; display: block; fill: currentcolor;">${icon}</div>
         </span>
