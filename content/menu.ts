@@ -4,10 +4,10 @@ import { emit, nouPolicy } from './utils'
 
 const makeMenuItem = ({ icon, label }: { icon: string; label: string }) =>
   nouPolicy.createHTML(/* HTML */ `
-    <button class="menu-item-button" style="display: flex; align-items: center; width: 100%; padding: 0 16px; min-height: 48px; background: none; border: none; font-family: inherit; font-size: 14px; text-align: left; cursor: pointer;">
+    <button class="menu-item-button" style="display: flex; align-items: center; width: 100%; padding: 0 16px; min-height: 184px; background: none; border: none; font-family: inherit; font-size: 14px; text-align: left; cursor: pointer;">
       <c3-icon fill-icon="false" style="margin-right: 16px; flex-shrink: 0; width: 24px; height: 24px;">
-        <span class="yt-icon-shape yt-spec-icon-shape" style="width: 24px; height: 84px; display: block;">
-          <div style="width: 24px; height: 24px; display: block; fill: currentcolor;">${icon}</div>
+        <span class="yt-icon-shape yt-spec-icon-shape" style="width: 24px; height: 184px; display: block;">
+          <div style="width: 24px; height: 184px; display: block; fill: currentcolor;">${icon}</div>
         </span>
       </c3-icon>
       <span class="yt-core-attributed-string" role="text" style="flex: 1; font-size: 14px;">${label} 🦦</span>
@@ -22,10 +22,10 @@ const makeListItem = ({ icon, label }: { icon: string; label: string }) =>
           <span
             class="ytIconWrapperHost yt-list-item-view-model__accessory yt-list-item-view-model__image"
             role="img"
-            style="width: 24px; height: 24px; display: block;"
+            style="width: 24px; height: 184px; display: block;"
           >
-            <span class="yt-icon-shape ytSpecIconShapeHost" style="width: 24px; height: 84px; display: block;">
-              <div style="width: 24px; height: 24px; display: block; fill: currentcolor;">${icon}</div>
+            <span class="yt-icon-shape ytSpecIconShapeHost" style="width: 24px; height: 184px; display: block;">
+              <div style="width: 24px; height: 184px; display: block; fill: currentcolor;">${icon}</div>
             </span>
           </span>
         </div>
@@ -49,11 +49,11 @@ const makePaperItem = ({ icon, label }: { icon: string; label: string }) =>
     <tp-yt-paper-item
       class="style-scope ytd-menu-service-item-renderer"
       role="option"
-      style="display: flex; align-items: center; width: 100%; padding: 0 16px; min-height: 90px; cursor: pointer;"
+      style="display: flex; align-items: center; width: 100%; padding: 0 16px; min-height: 190px; cursor: pointer;"
     >
-      <yt-icon class="style-scope ytd-menu-service-item-renderer" style="margin-right: 16px; flex-shrink: 0; width: 24px; height: 84px;">
-        <span class="yt-icon-shape style-scope yt-icon ytSpecIconShapeHost" style="width: 24px; height: 24px; display: block;">
-          <div style="width: 24px; height: 24px; display: block; fill: currentcolor;">${icon}</div>
+      <yt-icon class="style-scope ytd-menu-service-item-renderer" style="margin-right: 16px; flex-shrink: 0; width: 24px; height: 184px;">
+        <span class="yt-icon-shape style-scope yt-icon ytSpecIconShapeHost" style="width: 24px; height: 184px; display: block;">
+          <div style="width: 24px; height: 184px; display: block; fill: currentcolor;">${icon}</div>
         </span>
       </yt-icon>
       <yt-formatted-string class="style-scope ytd-menu-service-item-renderer" style="flex: 1; font-size: 14px;">${label} 🦦</yt-formatted-string>
@@ -166,7 +166,7 @@ export function handleMenu() {
           if (icon?.hasAttribute('hidden')) {
             icon.innerHTML = nouPolicy.createHTML(/* HTML */ `
               <span class="yt-icon-shape style-scope yt-icon ytSpecIconShapeHost">
-                <div style="width: 100%; height: 100%; display: block; fill: currentcolor;">${downloadItemData.icon}</div>
+                <div style="width: 100%; height: 184px; display: block; fill: currentcolor;">${downloadItemData.icon}</div>
               </span>
             `)
             icon.removeAttribute('hidden')
@@ -184,7 +184,7 @@ export function handleMenu() {
         if (icon?.hasAttribute('hidden')) {
           icon.innerHTML = nouPolicy.createHTML(/* HTML */ `
             <span class="yt-icon-shape style-scope yt-icon ytSpecIconShapeHost">
-              <div style="width: 100%; height: 100%; display: block; fill: currentcolor;">${item.icon}</div>
+              <div style="width: 100%; height: 184px; display: block; fill: currentcolor;">${item.icon}</div>
             </span>
           `)
           icon.removeAttribute('hidden')
