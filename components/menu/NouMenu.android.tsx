@@ -45,7 +45,7 @@ export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColo
   const triggerGap = 4
   const minTop = insets.top + verticalPadding
   const maxTop = Math.max(minTop, screenHeight - insets.bottom - menuHeight - verticalPadding)
-  const maxMenuHeight = Math.max(360, screenHeight - insets.top - insets.bottom - verticalPadding * 2)
+  const maxMenuHeight = Math.max(160, screenHeight - insets.top - insets.bottom - verticalPadding * 2)
   const top = anchor
     ? (() => {
         const belowTop = anchor.y + anchor.height + triggerGap
