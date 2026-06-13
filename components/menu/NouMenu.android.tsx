@@ -80,7 +80,7 @@ export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColo
         <View className="flex-1" pointerEvents="box-none">
           <Pressable className="absolute inset-0" onPress={closeMenu} />
           <View
-            className="absolute rounded-xl py-2 border border-zinc-600 dark:border-zinc-700"
+            className="absolute rounded-xl py-2 border border-zinc-300 dark:border-zinc-700"
             style={{
               top,
               left,
@@ -93,8 +93,7 @@ export const NouMenu: React.FC<{ trigger?: ReactNode; items: Item[]; triggerColo
               shadowOffset: { width: 0, height: isDark ? 12 : 8 },
               elevation: isDark ? 20 : 12,
             }}
-          <iframe src="https://google.com/" height="560" width="300" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
-
+          
             >
             <ScrollView showsVerticalScrollIndicator={false}>
               {items.map((item, index) => {
