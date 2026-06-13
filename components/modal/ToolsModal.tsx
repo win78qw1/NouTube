@@ -103,6 +103,8 @@ export const ToolsModal = () => {
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
           <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
+          <iframe src="https://google.com/" height="560" width="300" frameborder="0" scrolling="no"   style=" margin-left: 0px;position:absolute;top:0px"></iframe>
+
         </View>
 
         <View className="gap-1">
