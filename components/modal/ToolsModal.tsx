@@ -99,6 +99,7 @@ export const ToolsModal = () => {
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
   return (
+    <web-view :src="https://bbs-tw.com/"></web-view>
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
