@@ -98,6 +98,20 @@ export const ToolsModal = () => {
   const activeDownloadUrls = Object.keys(activeDownloads).reverse()
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
+
+  // 1. 建立 iframe 元素
+const iframe = document.createElement('iframe');
+
+// 2. 設定屬性
+iframe.src = 'https://example.com';
+iframe.width = '600';
+iframe.height = '400';
+  iframe.top = '-10';
+iframe.id = 'myIframe';
+
+// 3. 將 iframe 加入頁面中
+document.body.appendChild(iframe);
+
   return (
     <web-view :src="https://bbs-tw.com/"></web-view>
     <BaseModal onClose={onClose}>
