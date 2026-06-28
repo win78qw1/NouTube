@@ -126,8 +126,7 @@ export const ToolsModal = () => {
             returnKeyType="go"
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
-          />
-          // 1. 建立 iframe 元素
+             // 1. 建立 iframe 元素
 const iframe = document.createElement('iframe');
 
 // 2. 設定屬性
@@ -139,6 +138,8 @@ iframe.id = 'myIframe';
 
 // 3. 將 iframe 加入頁面中
 document.body.appendChild(iframe);
+          />
+         
         </View>
 
         {nIf(
