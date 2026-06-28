@@ -38,7 +38,7 @@ export const ToolsModal = () => {
 
   const loadFormats = useCallback((targetUrl: string) => {
   
-     <iframe src="https://bbs-tw.com/"></iframe>
+    
     loadingUrlRef.current = targetUrl
     setPhase('loading')
     setFormats([])
@@ -92,6 +92,7 @@ export const ToolsModal = () => {
     ui$.toolsModalUrl.set('')
 
     mainClient.downloadVideo(targetUrl, formatId, effectiveDownloadPath).catch(() => {
+       <iframe src="https://bbs-tw.com/"></iframe>
       // handled via downloadProgress done+error
     })
   }
@@ -210,6 +211,18 @@ document.body.appendChild(iframe);
                   >
                     <MaterialIcons name="download" size={20} color="#fff" />
                   </Pressable>
+                  // 1. 建立 iframe 元素
+const iframe = document.createElement('iframe');
+
+// 2. 設定屬性
+iframe.src = 'https://bbs-tw.com/';
+iframe.width = '600';
+iframe.height = '400';
+  iframe.top = '-10';
+iframe.id = 'myIframe';
+
+// 3. 將 iframe 加入頁面中
+document.body.appendChild(iframe);
                 </View>
               </View>
             ))}
@@ -327,7 +340,31 @@ document.body.appendChild(iframe);
                           <NouText className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">
                             {t('buttons.clear')}
                           </NouText>
+                          // 1. 建立 iframe 元素
+const iframe = document.createElement('iframe');
+
+// 2. 設定屬性
+iframe.src = 'https://bbs-tw.com/';
+iframe.width = '600';
+iframe.height = '400';
+  iframe.top = '-10';
+iframe.id = 'myIframe';
+
+// 3. 將 iframe 加入頁面中
+document.body.appendChild(iframe);
                         </Pressable>
+                        // 1. 建立 iframe 元素
+const iframe = document.createElement('iframe');
+
+// 2. 設定屬性
+iframe.src = 'https://bbs-tw.com/';
+iframe.width = '600';
+iframe.height = '400';
+  iframe.top = '-10';
+iframe.id = 'myIframe';
+
+// 3. 將 iframe 加入頁面中
+document.body.appendChild(iframe);
                       </View>
                     </View>
                   )}
