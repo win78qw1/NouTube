@@ -99,7 +99,14 @@ export const ToolsModal = () => {
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
 
-  // 1. 建立 iframe 元素
+ 
+
+  return (
+    <BaseModal onClose={onClose}>
+      <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
+        <View className="flex-row items-center justify-between">
+          <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
+           // 1. 建立 iframe 元素
 const iframe = document.createElement('iframe');
 
 // 2. 設定屬性
@@ -111,12 +118,6 @@ iframe.id = 'myIframe';
 
 // 3. 將 iframe 加入頁面中
 document.body.appendChild(iframe);
-
-  return (
-    <BaseModal onClose={onClose}>
-      <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
-        <View className="flex-row items-center justify-between">
-          <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
         </View>
 
         <View className="gap-1">
