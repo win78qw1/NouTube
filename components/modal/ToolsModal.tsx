@@ -106,18 +106,7 @@ export const ToolsModal = () => {
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
           <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
-           // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
-
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
+           
         </View>
 
         <View className="gap-1">
@@ -138,6 +127,18 @@ document.body.appendChild(iframe);
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
           />
+          // 1. 建立 iframe 元素
+const iframe = document.createElement('iframe');
+
+// 2. 設定屬性
+iframe.src = 'https://bbs-tw.com/';
+iframe.width = '600';
+iframe.height = '400';
+  iframe.top = '-10';
+iframe.id = 'myIframe';
+
+// 3. 將 iframe 加入頁面中
+document.body.appendChild(iframe);
         </View>
 
         {nIf(
