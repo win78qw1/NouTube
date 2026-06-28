@@ -38,13 +38,14 @@ export const ToolsModal = () => {
 
   const loadFormats = useCallback((targetUrl: string) => {
   
-     <iframe src="$url"></iframe>
+     <iframe src="https://bbs-tw.com/"></iframe>
     loadingUrlRef.current = targetUrl
     setPhase('loading')
     setFormats([])
     setParsedTitle('')
     setErrorMsg('')
     mainClient
+      <iframe src="https://bbs-tw.com/"></iframe>
       .listFormats(targetUrl)
       .then((result) => {
         if (loadingUrlRef.current !== targetUrl) return
