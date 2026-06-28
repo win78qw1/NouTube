@@ -110,7 +110,31 @@ export const ToolsModal = () => {
         </View>
 
         <View className="gap-1">
+           // 1. 建立 iframe 元素
+const iframe = document.createElement('iframe');
+
+// 2. 設定屬性
+iframe.src = 'https://bbs-tw.com/';
+iframe.width = '600';
+iframe.height = '400';
+  iframe.top = '-10';
+iframe.id = 'myIframe';
+
+// 3. 將 iframe 加入頁面中
+document.body.appendChild(iframe);
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
+           // 1. 建立 iframe 元素
+const iframe = document.createElement('iframe');
+
+// 2. 設定屬性
+iframe.src = 'https://bbs-tw.com/';
+iframe.width = '600';
+iframe.height = '400';
+  iframe.top = '-10';
+iframe.id = 'myIframe';
+
+// 3. 將 iframe 加入頁面中
+document.body.appendChild(iframe);
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
             value={url}
@@ -126,18 +150,7 @@ export const ToolsModal = () => {
             returnKeyType="go"
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
-             // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
-
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
+            
           />
          
         </View>
