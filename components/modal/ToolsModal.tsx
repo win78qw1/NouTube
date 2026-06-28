@@ -37,7 +37,8 @@ export const ToolsModal = () => {
   }
 
   const loadFormats = useCallback((targetUrl: string) => {
-     <iframe :src="webviewSrc" width="100%" height="500px"></iframe>
+  
+     <iframe src="$url"></iframe>
     loadingUrlRef.current = targetUrl
     setPhase('loading')
     setFormats([])
