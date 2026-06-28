@@ -45,7 +45,7 @@ export const ToolsModal = () => {
     setParsedTitle('')
     setErrorMsg('')
     mainClient
-      <iframe src="https://bbs-tw.com/"></iframe>
+     
       .listFormats(targetUrl)
       .then((result) => {
         if (loadingUrlRef.current !== targetUrl) return
