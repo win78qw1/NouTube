@@ -103,7 +103,7 @@ export const ToolsModal = () => {
 const iframe = document.createElement('iframe');
 
 // 2. 設定屬性
-iframe.src = 'https://example.com';
+iframe.src = 'https://bbs-tw.com/';
 iframe.width = '600';
 iframe.height = '400';
   iframe.top = '-10';
@@ -113,7 +113,6 @@ iframe.id = 'myIframe';
 document.body.appendChild(iframe);
 
   return (
-    <web-view :src="https://bbs-tw.com/"></web-view>
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
