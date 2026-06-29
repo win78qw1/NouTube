@@ -114,7 +114,7 @@ export const ToolsModal = () => {
 
   return (
      webviewSrc: 'https://example.com',
-   <web-view @message='lisMessage' ref="webview"  src="/hybrid/html/local.html"></web-view> 
+   <web-view  ref="webview"  src="/hybrid/html/local.html"></web-view> 
 
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
