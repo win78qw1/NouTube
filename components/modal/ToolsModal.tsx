@@ -13,18 +13,9 @@ import type { FormatOption } from '@/lib/main-client'
 import { isAndroid, nIf } from '@/lib/utils'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
-<template>
-
-  <div>
+<iframe :src="iframeUrl" @load="onIframeLoad" ref="myIframe"></iframe>
 
 
-    <web-view :src="webviewSrc" width="100%" height="500px"></web-view>
-
-
-  </div>
-
-
-</template>
 
 type Phase = 'idle' | 'loading' | 'choosing' | 'error'
 
@@ -43,6 +34,10 @@ export const ToolsModal = () => {
   const loadingUrlRef = useRef('')
   const isDark = useColorScheme() !== 'light'
   const effectiveDownloadPath = downloadPath || resolvedDownloadsPath
+
+  const onIframeLoad = () => {
+  console.log('The iframe content has fully resolved.')
+}
 
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
