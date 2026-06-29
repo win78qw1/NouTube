@@ -13,6 +13,19 @@ import type { FormatOption } from '@/lib/main-client'
 import { isAndroid, nIf } from '@/lib/utils'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
+<template>
+
+  <div>
+
+
+    <web-view :src="webviewSrc" width="100%" height="500px"></web-view>
+
+
+  </div>
+
+
+</template>
+
 type Phase = 'idle' | 'loading' | 'choosing' | 'error'
 
 export const ToolsModal = () => {
@@ -75,7 +88,6 @@ export const ToolsModal = () => {
     }
     setFormats([])
   }, [isOpen, toolsModalUrl, loadFormats])
-<iframe :src="webviewSrc" width="100%" height="500px"></iframe>,
   const handleDownload = (formatId: string) => {
     const targetUrl = toolsModalUrl || url
     downloads$[targetUrl].set({
