@@ -103,9 +103,10 @@ export const ToolsModal = () => {
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
 
- 
+ <iframe :src="webviewSrc" width="100%" height="500px"></iframe>
 
   return (
+     webviewSrc: 'https://example.com'
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
@@ -114,31 +115,7 @@ export const ToolsModal = () => {
         </View>
 
         <View className="gap-1">
-           // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
-
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
-          <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
-           // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
-
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
+          
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
             value={url}
@@ -147,17 +124,7 @@ document.body.appendChild(iframe);
               setPhase('idle')
               setFormats([])
                // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
 
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
             }}
             
             onSubmitEditing={() => {
@@ -171,18 +138,7 @@ document.body.appendChild(iframe);
           />
          
         </View>
- // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
 
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
         {nIf(
           !isAndroid && (phase === 'idle' || phase === 'choosing'),
           <View className="gap-1">
@@ -235,18 +191,7 @@ document.body.appendChild(iframe);
                   >
                     <MaterialIcons name="download" size={20} color="#fff" />
                   </Pressable>
-                  // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
-
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
+                 
                 </View>
               </View>
             ))}
@@ -364,31 +309,7 @@ document.body.appendChild(iframe);
                           <NouText className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">
                             {t('buttons.clear')}
                           </NouText>
-                          // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
-
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
-                        </Pressable>
-                        // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
-
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
+                         
                       </View>
                     </View>
                   )}
