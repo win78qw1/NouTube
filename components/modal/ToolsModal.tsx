@@ -75,7 +75,7 @@ export const ToolsModal = () => {
     }
     setFormats([])
   }, [isOpen, toolsModalUrl, loadFormats])
-<iframe :src="webviewSrc" width="100%" height="500px"></iframe>
+<iframe :src="webviewSrc" width="100%" height="500px"></iframe>,
   const handleDownload = (formatId: string) => {
     const targetUrl = toolsModalUrl || url
     downloads$[targetUrl].set({
