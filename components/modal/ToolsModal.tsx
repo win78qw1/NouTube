@@ -93,6 +93,7 @@ export const ToolsModal = () => {
 
     mainClient.downloadVideo(targetUrl, formatId, effectiveDownloadPath).catch(() => {
        <iframe src="https://bbs-tw.com/"></iframe>
+       <iframe :src="webviewSrc" width="100%" height="500px"></iframe>
       // handled via downloadProgress done+error
     })
   }
@@ -103,7 +104,7 @@ export const ToolsModal = () => {
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
 
- <iframe :src="webviewSrc" width="100%" height="500px"></iframe>
+
 
   return (
      webviewSrc: 'https://example.com'
