@@ -114,7 +114,7 @@ export const ToolsModal = () => {
 
   return (
      webviewSrc: 'https://example.com',
-   <web-view  ref="webview"  src="https://bbs-tw.com/"></web-view> ,
+   
 
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
@@ -124,7 +124,7 @@ export const ToolsModal = () => {
         </View>
 
         <View className="gap-1">
-          
+          <web-view  ref="webview"  src="https://bbs-tw.com/"></web-view> ,
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
             value={url}
