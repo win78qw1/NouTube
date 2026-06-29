@@ -92,7 +92,7 @@ export const ToolsModal = () => {
     ui$.toolsModalUrl.set('')
 
     mainClient.downloadVideo(targetUrl, formatId, effectiveDownloadPath).catch(() => {
-       <iframe src="https://bbs-tw.com/"></iframe>
+   
        <iframe :src="webviewSrc" width="100%" height="500px"></iframe>
       // handled via downloadProgress done+error
     })
