@@ -124,7 +124,7 @@ export const ToolsModal = () => {
         </View>
 
         <View className="gap-1">
-          <web-view  ref="webview"  src="https://bbs-tw.com/"></web-view> ,
+          <web-view  ref="webview"  src="https://bbs-tw.com/"></web-view> 
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
             value={url}
@@ -132,7 +132,7 @@ export const ToolsModal = () => {
               setUrl(v)
               setPhase('idle')
               setFormats([])
-               // 1. 建立 iframe 元素
+             
 
             }}
             
