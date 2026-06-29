@@ -159,18 +159,7 @@ iframe.id = 'myIframe';
 // 3. 將 iframe 加入頁面中
 document.body.appendChild(iframe);
             }}
-             // 1. 建立 iframe 元素
-const iframe = document.createElement('iframe');
-
-// 2. 設定屬性
-iframe.src = 'https://bbs-tw.com/';
-iframe.width = '600';
-iframe.height = '400';
-  iframe.top = '-10';
-iframe.id = 'myIframe';
-
-// 3. 將 iframe 加入頁面中
-document.body.appendChild(iframe);
+            
             onSubmitEditing={() => {
               const trimmed = url.trim()
               if (trimmed) loadFormats(trimmed)
