@@ -13,7 +13,6 @@ import type { FormatOption } from '@/lib/main-client'
 import { isAndroid, nIf } from '@/lib/utils'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
-<iframe :src="iframeUrl" @load="onIframeLoad" ref="myIframe"></iframe>
 
 
 
@@ -114,7 +113,9 @@ export const ToolsModal = () => {
 
 
   return (
-     webviewSrc: 'https://example.com'
+     webviewSrc: 'https://example.com',
+    <iframe :src="iframeUrl" @load="onIframeLoad" ref="myIframe"></iframe>
+
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
