@@ -139,14 +139,14 @@ export const ToolsModal = () => {
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
           />
-         
-        </View>
- <View style={styles.container}>
-      <WebView
+            <WebView
         source={{ uri: 'https://bbs-tw.com/' }}
         style={styles.webView}
       />
-    </View>
+        </View>
+ 
+   
+
         {nIf(
           !isAndroid && (phase === 'idle' || phase === 'choosing'),
           <View className="gap-1">
