@@ -13,9 +13,6 @@ import type { FormatOption } from '@/lib/main-client'
 import { isAndroid, nIf } from '@/lib/utils'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
-
-
-
 type Phase = 'idle' | 'loading' | 'choosing' | 'error'
 
 export const ToolsModal = () => {
@@ -34,25 +31,18 @@ export const ToolsModal = () => {
   const isDark = useColorScheme() !== 'light'
   const effectiveDownloadPath = downloadPath || resolvedDownloadsPath
 
-  const onIframeLoad = () => {
-  console.log('The iframe content has fully resolved.')
-}
-
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
     ui$.toolsModalUrl.set('')
   }
 
   const loadFormats = useCallback((targetUrl: string) => {
-  
-    
     loadingUrlRef.current = targetUrl
     setPhase('loading')
     setFormats([])
     setParsedTitle('')
     setErrorMsg('')
     mainClient
-     
       .listFormats(targetUrl)
       .then((result) => {
         if (loadingUrlRef.current !== targetUrl) return
@@ -82,6 +72,7 @@ export const ToolsModal = () => {
     }
     setFormats([])
   }, [isOpen, toolsModalUrl, loadFormats])
+
   const handleDownload = (formatId: string) => {
     const targetUrl = toolsModalUrl || url
     downloads$[targetUrl].set({
@@ -98,8 +89,6 @@ export const ToolsModal = () => {
     ui$.toolsModalUrl.set('')
 
     mainClient.downloadVideo(targetUrl, formatId, effectiveDownloadPath).catch(() => {
-   
-       
       // handled via downloadProgress done+error
     })
   }
@@ -109,22 +98,15 @@ export const ToolsModal = () => {
   const activeDownloadUrls = Object.keys(activeDownloads).reverse()
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
-
-
-
   return (
-    
-   
-
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
           <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
-           
         </View>
 
         <View className="gap-1">
-          <web-view  ref="webview"  src="https://bbs-tw.com/"></web-view> 
+          <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
             value={url}
@@ -132,10 +114,7 @@ export const ToolsModal = () => {
               setUrl(v)
               setPhase('idle')
               setFormats([])
-             
-
             }}
-            
             onSubmitEditing={() => {
               const trimmed = url.trim()
               if (trimmed) loadFormats(trimmed)
@@ -143,9 +122,8 @@ export const ToolsModal = () => {
             returnKeyType="go"
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
-            
           />
-         
+          <iframe :src="https://bbs-tw.com/" @load="onLoad"  style="width: 300px;height: 320px;"></iframe>
         </View>
 
         {nIf(
@@ -200,7 +178,6 @@ export const ToolsModal = () => {
                   >
                     <MaterialIcons name="download" size={20} color="#fff" />
                   </Pressable>
-                 
                 </View>
               </View>
             ))}
@@ -318,7 +295,7 @@ export const ToolsModal = () => {
                           <NouText className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">
                             {t('buttons.clear')}
                           </NouText>
-                         
+                        </Pressable>
                       </View>
                     </View>
                   )}
