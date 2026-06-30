@@ -104,8 +104,22 @@ export const ToolsModal = () => {
   const activeDownloadUrls = Object.keys(activeDownloads).reverse()
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
+  const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  webView: {
+    flex: 1,
+  },
+});
+
   return (
- 
+  <View style={styles.container}>
+      <WebView
+        source={{ uri: 'https://example.com' }}
+        style={styles.webView}
+      />
+    </View>
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
