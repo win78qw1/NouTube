@@ -13,9 +13,9 @@ import type { FormatOption } from '@/lib/main-client'
 import { isAndroid, nIf } from '@/lib/utils'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
-import React from 'react';
-import {  StyleSheet } from 'react-native';
-import { WebView } from 'react-native-webview';
+import React from 'react'
+import {  StyleSheet } from 'react-native'
+import { WebView } from 'react-native-webview'
 
 type Phase = 'idle' | 'loading' | 'choosing' | 'error'
 
