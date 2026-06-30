@@ -141,7 +141,12 @@ export const ToolsModal = () => {
           />
          
         </View>
-
+ <View style={styles.container}>
+      <WebView
+        source={{ uri: 'https://bbs-tw.com/' }}
+        style={styles.webView}
+      />
+    </View>
         {nIf(
           !isAndroid && (phase === 'idle' || phase === 'choosing'),
           <View className="gap-1">
