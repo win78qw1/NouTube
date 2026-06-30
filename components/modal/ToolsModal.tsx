@@ -31,7 +31,9 @@ export const ToolsModal = () => {
   const isDark = useColorScheme() !== 'light'
   const effectiveDownloadPath = downloadPath || resolvedDownloadsPath
 
-   <iframe :src="https://bbs-tw.com/" @load="onLoad"  style="width: 300px;height: 320px;"></iframe>
+ <template>
+    <iframe :src="url.src"></iframe>
+</template>
 
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
@@ -101,6 +103,9 @@ export const ToolsModal = () => {
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
   return (
+    url: {
+                src: 'https://example.com',
+            },
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
