@@ -31,6 +31,8 @@ export const ToolsModal = () => {
   const isDark = useColorScheme() !== 'light'
   const effectiveDownloadPath = downloadPath || resolvedDownloadsPath
 
+   <iframe :src="https://bbs-tw.com/" @load="onLoad"  style="width: 300px;height: 320px;"></iframe>
+
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
     ui$.toolsModalUrl.set('')
@@ -123,7 +125,7 @@ export const ToolsModal = () => {
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
           />
-          <iframe :src="https://bbs-tw.com/" @load="onLoad"  style="width: 300px;height: 320px;"></iframe>,
+         
         </View>
 
         {nIf(
