@@ -120,7 +120,12 @@ export const ToolsModal = () => {
         <View className="flex-row items-center justify-between">
           <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
         </View>
-
+ <View style={styles.container}>
+      <WebView
+        source={{ uri: 'https://example.com' }}
+        style={styles.webView}
+      />
+    </View>
         <View className="gap-1">
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
           <TextInput
@@ -139,10 +144,7 @@ export const ToolsModal = () => {
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
           />
-            <WebView
-        source={{ uri: 'https://bbs-tw.com/' }}
-        style={styles.webView}
-      />
+           
         </View>
  
    
