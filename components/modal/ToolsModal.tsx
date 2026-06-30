@@ -13,6 +13,10 @@ import type { FormatOption } from '@/lib/main-client'
 import { isAndroid, nIf } from '@/lib/utils'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { WebView } from 'react-native-webview';
+
 type Phase = 'idle' | 'loading' | 'choosing' | 'error'
 
 export const ToolsModal = () => {
@@ -31,9 +35,7 @@ export const ToolsModal = () => {
   const isDark = useColorScheme() !== 'light'
   const effectiveDownloadPath = downloadPath || resolvedDownloadsPath
 
- <template>
-    <iframe :src="url.src"></iframe>
-</template>
+
 
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
@@ -103,9 +105,7 @@ export const ToolsModal = () => {
   const getProgressValue = (value: number) => Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0))
 
   return (
-    url: {
-                src: 'https://example.com',
-            },
+ 
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
