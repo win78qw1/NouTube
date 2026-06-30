@@ -14,7 +14,7 @@ import { isAndroid, nIf } from '@/lib/utils'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import {  StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 type Phase = 'idle' | 'loading' | 'choosing' | 'error'
