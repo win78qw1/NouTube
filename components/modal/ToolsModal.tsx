@@ -113,7 +113,7 @@ export const ToolsModal = () => {
 
 
   return (
-     webviewSrc: 'https://example.com',
+    
    
 
     <BaseModal onClose={onClose}>
