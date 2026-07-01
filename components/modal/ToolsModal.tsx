@@ -35,12 +35,12 @@ export const ToolsModal = () => {
   const isDark = useColorScheme() !== 'light'
   const effectiveDownloadPath = downloadPath || resolvedDownloadsPath
 
-
+<WebView source={{ uri: 'https://github.com/facebook/react-native'   }}      />
 
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
     ui$.toolsModalUrl.set('')
-      <WebView source={{ uri: 'https://github.com/facebook/react-native'   }}      />
+      
   }
 
   const loadFormats = useCallback((targetUrl: string) => {
