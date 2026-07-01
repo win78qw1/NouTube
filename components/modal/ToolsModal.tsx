@@ -147,7 +147,7 @@ export const ToolsModal = () => {
         </View>
  
     <View>
-          <WebView source={{ uri: 'https://github.com/facebook/react-native'   }} />
+          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
              </View>
 
         {nIf(
