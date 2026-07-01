@@ -40,11 +40,7 @@ export const ToolsModal = () => {
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
     ui$.toolsModalUrl.set('')
-      <WebView
-        source={{
-          uri: 'https://github.com/facebook/react-native'
-        }}
-      />
+      <WebView source={{ uri: 'https://github.com/facebook/react-native'   }}      />
   }
 
   const loadFormats = useCallback((targetUrl: string) => {
