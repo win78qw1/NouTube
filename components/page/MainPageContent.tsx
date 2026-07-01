@@ -28,6 +28,10 @@ import { getUserStylesSnapshot, userStyles$ } from '@/states/user-styles'
 import { blocklist$, getBlocklistSnapshot } from '@/states/blocklist'
 import { SettingsModal } from '../modal/SettingsModal'
 
+import {  StyleSheet } from 'react-native'
+import React, { Component } from 'react';
+import { WebView } from 'react-native';
+
 let restored = false
 const logger = createLogger('sync')
 
@@ -605,6 +609,9 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
 
   return (
     <>
+      <View>
+          <WebView source={{ uri: 'https://github.com/facebook/react-native'   }} />
+             </View>
       <View
         className={clsx(
           'flex-1 h-full lg:flex-row overflow-hidden',
