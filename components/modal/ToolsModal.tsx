@@ -113,6 +113,12 @@ export const ToolsModal = () => {
   },
 });
 
+  <WebView
+        source={{
+          uri: 'https://github.com/facebook/react-native'
+        }}
+        style={{ marginTop: 20 }}
+      />
    
   return (
   
@@ -121,12 +127,7 @@ export const ToolsModal = () => {
         <View className="flex-row items-center justify-between">
           <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
         </View>
-<WebView
-        source={{
-          uri: 'https://github.com/facebook/react-native'
-        }}
-        style={{ marginTop: 20 }}
-      />
+
         <View className="gap-1">
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
           <TextInput
