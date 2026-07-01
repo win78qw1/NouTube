@@ -28,7 +28,7 @@ import { getUserStylesSnapshot, userStyles$ } from '@/states/user-styles'
 import { blocklist$, getBlocklistSnapshot } from '@/states/blocklist'
 import { SettingsModal } from '../modal/SettingsModal'
 
-import {  StyleSheet } from 'react-native'
+
 import React, { Component } from 'react';
 import { WebView } from 'react-native';
 
