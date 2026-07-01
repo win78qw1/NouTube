@@ -117,7 +117,6 @@ export const ToolsModal = () => {
         source={{
           uri: 'https://github.com/facebook/react-native'
         }}
-        style={{ marginTop: 20 }}
       />
    
   return (
