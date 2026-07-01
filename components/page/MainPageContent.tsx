@@ -31,7 +31,7 @@ import { SettingsModal } from '../modal/SettingsModal'
 
 import React, { Component } from 'react';
 import { WebView } from 'react-native';
-import { View } from 'react-native-webview';
+//import { View } from 'react-native-webview';
 
 let restored = false
 const logger = createLogger('sync')
@@ -546,6 +546,7 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
   }, [])
 
   useEffect(() => {
+    <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
     const webview = nativeRef.current
     if (webview) {
       ui$.webview.set(ObservableHint.opaque(webview))
@@ -610,9 +611,9 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
 
   return (
     <>
-      <View>
-          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
-             </View>
+     
+          
+            
       <View
         className={clsx(
           'flex-1 h-full lg:flex-row overflow-hidden',
