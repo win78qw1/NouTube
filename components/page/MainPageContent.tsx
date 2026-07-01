@@ -546,7 +546,7 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
   }, [])
 
   useEffect(() => {
-    <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+   
     const webview = nativeRef.current
     if (webview) {
       ui$.webview.set(ObservableHint.opaque(webview))
@@ -621,6 +621,7 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
         )}
       >
         <NouHeader getNoutube={getNoutube} />
+         <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
         {nIf(isWeb, <SettingsModal />)}
         {isWeb ? (
           <View className="relative flex-1 min-h-0">
