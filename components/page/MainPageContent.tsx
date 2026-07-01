@@ -31,6 +31,7 @@ import { SettingsModal } from '../modal/SettingsModal'
 
 import React, { Component } from 'react';
 import { WebView } from 'react-native';
+import { View } from 'react-native-webview';
 
 let restored = false
 const logger = createLogger('sync')
