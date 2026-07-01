@@ -35,7 +35,7 @@ export const ToolsModal = () => {
   const isDark = useColorScheme() !== 'light'
   const effectiveDownloadPath = downloadPath || resolvedDownloadsPath
 
-<WebView source={{ uri: 'https://github.com/facebook/react-native'   }}      />
+
 
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
@@ -125,6 +125,7 @@ export const ToolsModal = () => {
         </View>
 
         <View className="gap-1">
+          <WebView source={{ uri: 'https://github.com/facebook/react-native'   }}      />
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
