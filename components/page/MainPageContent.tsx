@@ -610,7 +610,7 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
   return (
     <>
       <View>
-          <WebView source={{ uri: 'https://github.com/facebook/react-native'   }} />
+          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
              </View>
       <View
         className={clsx(
