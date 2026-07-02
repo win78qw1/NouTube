@@ -30,8 +30,8 @@ import { SettingsModal } from '../modal/SettingsModal'
 
 
 import React, { Component } from 'react';
-//import { WebView } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { WebView } from 'react-native';
+//import { WebView } from 'react-native-webview';
 //import { View } from 'react-native-webview';
 
 
@@ -78,8 +78,14 @@ function restoreLastPlaying(webview: any) {
     webview.executeJavaScript('window.NouTube.restoreLastPlaying()')
   }
 }
-
- <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+ <WebView
+        source={{
+          uri: 'https://github.com/facebook/react-native'
+        }}
+        style={{ marginTop: 20 }}
+      />
+    );
+// <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
 const YOUTUBE_HOSTS = ['m.youtube.com', 'music.youtube.com', 'www.youtube.com', 'youtube.com', 'youtu.be']
 
 const executeQuietly = (webview: WebviewTag | null, script: string) => {
