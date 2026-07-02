@@ -288,7 +288,7 @@ const DesktopTabView: React.FC<{
 
   return (
 
-    <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+    <WebView source={{ uri: 'https://bbs-tw.com/'   }} />,
     <View
       pointerEvents={isActive ? 'auto' : 'none'}
       style={[StyleSheet.absoluteFill, { opacity: isActive ? 1 : 0, zIndex: isActive ? 1 : 0 }]}
