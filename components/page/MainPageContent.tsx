@@ -71,7 +71,7 @@ const onScroll = ({
 }
 
 function restoreLastPlaying(webview: any) {
-  <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+ 
   if (webview && settings$.restoreOnStart.get() && !restored) {
     restored = true
     webview.executeJavaScript('window.NouTube.restoreLastPlaying()')
