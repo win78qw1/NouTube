@@ -17,7 +17,7 @@ import {  StyleSheet } from 'react-native'
 import React, { Component } from 'react';
 //import { WebView } from 'react-native';
 
-import React, { Component } from 'react';
+//import React, { Component } from 'react';
 //import { WebView } from 'react-native';
 import { WebView } from 'react-native-webview';
 //import { View } from 'react-native-webview';
