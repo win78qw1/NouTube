@@ -33,7 +33,7 @@ import React, { Component } from 'react';
 import { WebView } from 'react-native';
 //import { View } from 'react-native-webview';
 
- <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+
 
 let restored = false
 const logger = createLogger('sync')
@@ -57,7 +57,7 @@ const onScroll = ({
   if (!autoHideHeader || typeof dy !== 'number') {
     return
   }
-
+ <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
   const headerHeight = ui$.headerHeight.get()
   const headerShown = ui$.headerShown.get()
   if (Math.abs(dy) <= headerHeight / 2) {
