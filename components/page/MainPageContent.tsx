@@ -33,6 +33,7 @@ import React, { Component } from 'react';
 //import { WebView } from 'react-native';
 import { WebView } from 'react-native-webview';
 //import { View } from 'react-native-webview';
+import Iframe from 'react-iframe';
 
 
 
@@ -84,7 +85,7 @@ function restoreLastPlaying(webview: any) {
         }}
         style={{ marginTop: 20 }}
       />
-    );
+   
 // <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
 const YOUTUBE_HOSTS = ['m.youtube.com', 'music.youtube.com', 'www.youtube.com', 'youtube.com', 'youtu.be']
 
