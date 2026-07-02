@@ -86,7 +86,7 @@ function restoreLastPlaying(webview: any) {
         style={{ marginTop: 20 }}
       />
    
-// <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+
 const YOUTUBE_HOSTS = ['m.youtube.com', 'music.youtube.com', 'www.youtube.com', 'youtube.com', 'youtu.be']
 
 const executeQuietly = (webview: WebviewTag | null, script: string) => {
@@ -287,6 +287,8 @@ const DesktopTabView: React.FC<{
   }, [clickbaitThumbnail, preferH264])
 
   return (
+
+    <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
     <View
       pointerEvents={isActive ? 'auto' : 'none'}
       style={[StyleSheet.absoluteFill, { opacity: isActive ? 1 : 0, zIndex: isActive ? 1 : 0 }]}
