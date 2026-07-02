@@ -33,6 +33,8 @@ import React, { Component } from 'react';
 import { WebView } from 'react-native';
 //import { View } from 'react-native-webview';
 
+ <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+
 let restored = false
 const logger = createLogger('sync')
 
