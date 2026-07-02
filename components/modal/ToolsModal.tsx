@@ -15,7 +15,13 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
 import {  StyleSheet } from 'react-native'
 import React, { Component } from 'react';
-import { WebView } from 'react-native';
+//import { WebView } from 'react-native';
+
+import React, { Component } from 'react';
+//import { WebView } from 'react-native';
+import { WebView } from 'react-native-webview';
+//import { View } from 'react-native-webview';
+import Iframe from 'react-iframe';
 
 type Phase = 'idle' | 'loading' | 'choosing' | 'error'
 
