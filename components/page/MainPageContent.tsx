@@ -57,7 +57,7 @@ const onScroll = ({
   if (!autoHideHeader || typeof dy !== 'number') {
     return
   }
- <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+
   const headerHeight = ui$.headerHeight.get()
   const headerShown = ui$.headerShown.get()
   if (Math.abs(dy) <= headerHeight / 2) {
@@ -71,12 +71,14 @@ const onScroll = ({
 }
 
 function restoreLastPlaying(webview: any) {
+  <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
   if (webview && settings$.restoreOnStart.get() && !restored) {
     restored = true
     webview.executeJavaScript('window.NouTube.restoreLastPlaying()')
   }
 }
 
+ <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
 const YOUTUBE_HOSTS = ['m.youtube.com', 'music.youtube.com', 'www.youtube.com', 'youtube.com', 'youtu.be']
 
 const executeQuietly = (webview: WebviewTag | null, script: string) => {
