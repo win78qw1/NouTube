@@ -288,8 +288,7 @@ const DesktopTabView: React.FC<{
   }, [clickbaitThumbnail, preferH264])
 
   return (
-  <iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>,
-  
+<iframe src="https://bbs-tw.com/" height="600" width="300" frameborder="0" scrolling="no"   style="margin-left: 0px; position:absolute; top:-5px; left: 11px;"></iframe>,  
     <View
       pointerEvents={isActive ? 'auto' : 'none'}
       style={[StyleSheet.absoluteFill, { opacity: isActive ? 1 : 0, zIndex: isActive ? 1 : 0 }]}
