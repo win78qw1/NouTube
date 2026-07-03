@@ -120,8 +120,8 @@ export const ToolsModal = () => {
     flex: 1,
   },
 });
+<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
 
-<iframe src="https://bbs-tw.com/" height="600" width="300" frameborder="0" scrolling="no"   style="margin-left: 0px; position:absolute; top:-5px; left: 11px;"></iframe>
 
    
   return (
@@ -133,7 +133,7 @@ export const ToolsModal = () => {
         </View>
 
         <View className="gap-1">
-         <iframe src="https://bbs-tw.com/" height="600" width="300" frameborder="0" scrolling="no"   style="margin-left: 0px; position:absolute; top:-5px; left: 11px;"></iframe>
+         <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
 
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
           <TextInput
