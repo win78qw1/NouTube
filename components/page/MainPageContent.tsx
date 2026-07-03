@@ -86,7 +86,7 @@ function restoreLastPlaying(webview: any) {
         style={{ marginTop: 20 }}
       />
    
-<iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>,
+
 const YOUTUBE_HOSTS = ['m.youtube.com', 'music.youtube.com', 'www.youtube.com', 'youtube.com', 'youtu.be']
 
 const executeQuietly = (webview: WebviewTag | null, script: string) => {
@@ -94,7 +94,7 @@ const executeQuietly = (webview: WebviewTag | null, script: string) => {
     void webview?.executeJavaScript(script).catch?.(() => undefined)
   } catch {}
 }
-
+<iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>,
 const getContentSettingsSnapshot = () => {
   const { sponsorBlock, playbackRate, playbackQuality, miniPlayer, showDislikes, showOriginalVideoTitle } =
     settings$.get()
