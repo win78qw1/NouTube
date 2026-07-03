@@ -425,6 +425,7 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
  ])
 
   useEffect(() => {
+     [ <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
     auth$.plan.set(me?.plan)
     const runSync = () => {
       void syncSupabase().catch((error) => {
@@ -461,6 +462,7 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
         const webview = ui$.webview.get() || nativeRef.current
         restoreLastPlaying(webview)
         if (!isWeb) {
+           [ <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
           toggleShorts(hideShorts)
           syncUserStylesToWebview()
           syncBlocklistToWebview()
