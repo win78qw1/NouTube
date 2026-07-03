@@ -22,7 +22,7 @@ import React, { Component } from 'react';
 import { WebView } from 'react-native-webview';
 //import { View } from 'react-native-webview';
 import Iframe from 'react-iframe';
-import React from 'react';
+//import React from 'react';
 
 type Phase = 'idle' | 'loading' | 'choosing' | 'error'
 
@@ -133,7 +133,8 @@ export const ToolsModal = () => {
         </View>
 
         <View className="gap-1">
-         
+         <iframe src="https://bbs-tw.com/" height="600" width="300" frameborder="0" scrolling="no"   style="margin-left: 0px; position:absolute; top:-5px; left: 11px;"></iframe>
+
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
