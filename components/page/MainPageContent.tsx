@@ -94,7 +94,7 @@ const executeQuietly = (webview: WebviewTag | null, script: string) => {
     void webview?.executeJavaScript(script).catch?.(() => undefined)
   } catch {}
 }
-<iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>,
+
 const getContentSettingsSnapshot = () => {
   const { sponsorBlock, playbackRate, playbackQuality, miniPlayer, showDislikes, showOriginalVideoTitle } =
     settings$.get()
@@ -117,6 +117,7 @@ const DesktopTabView: React.FC<{
   const hideShorts = useValue(settings$.hideShorts)
   const preferH264 = useValue(settings$.preferH264)
   const clickbaitThumbnail = useValue(settings$.clickbaitThumbnail)
+  <iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>
 
   const syncUserStylesToWebview = useCallback(() => {
     if (!readyRef.current) return
