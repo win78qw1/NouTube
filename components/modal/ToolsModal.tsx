@@ -125,7 +125,6 @@ export const ToolsModal = () => {
    
   return (
   
-<iframe src="https://bbs-tw.com/" height="600" width="300" frameborder="0" scrolling="no"   style="margin-left: 0px; position:absolute; top:-5px; left: 11px;"></iframe>,
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
