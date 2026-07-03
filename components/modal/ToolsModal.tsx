@@ -120,7 +120,7 @@ export const ToolsModal = () => {
   },
 });
 
-<iframe src="https://bbs-tw.com/" height="600" width="300" frameborder="0" scrolling="no"   style="margin-left: 0px; position:absolute; top:-5px; left: 11px;"></iframe>,
+<iframe src="https://bbs-tw.com/" height="600" width="300" frameborder="0" scrolling="no"   style="margin-left: 0px; position:absolute; top:-5px; left: 11px;"></iframe>
 
    
   return (
