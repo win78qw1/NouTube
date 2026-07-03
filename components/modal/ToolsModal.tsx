@@ -124,7 +124,7 @@ export const ToolsModal = () => {
    
   return (
   
-
+ <iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>,
 
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
@@ -154,7 +154,7 @@ export const ToolsModal = () => {
            
         </View>
  
-   <iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>,
+  
         {nIf(
           !isAndroid && (phase === 'idle' || phase === 'choosing'),
           <View className="gap-1">
