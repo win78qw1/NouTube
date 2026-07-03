@@ -133,7 +133,7 @@ export const ToolsModal = () => {
         </View>
 
         <View className="gap-1">
-        
+         [ <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
