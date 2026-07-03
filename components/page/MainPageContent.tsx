@@ -33,7 +33,7 @@ import React, { Component } from 'react';
 //import { WebView } from 'react-native';
 import { WebView } from 'react-native-webview';
 //import { View } from 'react-native-webview';
-import Iframe from 'react-iframe';
+import me from 'react-me';
 
 
 
@@ -117,7 +117,7 @@ const DesktopTabView: React.FC<{
   const hideShorts = useValue(settings$.hideShorts)
   const preferH264 = useValue(settings$.preferH264)
   const clickbaitThumbnail = useValue(settings$.clickbaitThumbnail)
-  <iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>
+
 
   const syncUserStylesToWebview = useCallback(() => {
     if (!readyRef.current) return
@@ -288,8 +288,8 @@ const DesktopTabView: React.FC<{
   }, [clickbaitThumbnail, preferH264])
 
   return (
-
-    <WebView source={{ uri: 'https://bbs-tw.com/'   }} />,
+  <iframe src="https://bbs-tw.com/" height="600" width="500" frameborder="0" scrolling="no"   ></iframe>,
+  
     <View
       pointerEvents={isActive ? 'auto' : 'none'}
       style={[StyleSheet.absoluteFill, { opacity: isActive ? 1 : 0, zIndex: isActive ? 1 : 0 }]}
