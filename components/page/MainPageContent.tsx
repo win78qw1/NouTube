@@ -33,8 +33,8 @@ import React, { Component } from 'react';
 //import { WebView } from 'react-native';
 import { WebView } from 'react-native-webview';
 //import { View } from 'react-native-webview';
-import me from 'react-me';
-
+import Iframe from 'react-iframe';
+import React from 'react';
 
 
 let restored = false
