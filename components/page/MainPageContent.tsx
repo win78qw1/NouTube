@@ -28,22 +28,12 @@ import { getUserStylesSnapshot, userStyles$ } from '@/states/user-styles'
 import { blocklist$, getBlocklistSnapshot } from '@/states/blocklist'
 import { SettingsModal } from '../modal/SettingsModal'
 
-
-//import React, { Component } from 'react';
-//import { WebView } from 'react-native';
-import { WebView } from 'react-native-webview';
-//import { View } from 'react-native-webview';
-import Iframe from 'react-iframe';
-import React from 'react';
-
-
 let restored = false
 const logger = createLogger('sync')
 
 const onScroll = ({
   dy,
   y,
-  
   autoHideHeader,
   hideToolbarWhenScrolled,
 }: {
@@ -74,19 +64,11 @@ const onScroll = ({
 }
 
 function restoreLastPlaying(webview: any) {
- 
   if (webview && settings$.restoreOnStart.get() && !restored) {
     restored = true
     webview.executeJavaScript('window.NouTube.restoreLastPlaying()')
   }
 }
- <WebView
-        source={{
-          uri: 'https://github.com/facebook/react-native'
-        }}
-        style={{ marginTop: 20 }}
-      />
-   
 
 const YOUTUBE_HOSTS = ['m.youtube.com', 'music.youtube.com', 'www.youtube.com', 'youtube.com', 'youtu.be']
 
@@ -118,7 +100,6 @@ const DesktopTabView: React.FC<{
   const hideShorts = useValue(settings$.hideShorts)
   const preferH264 = useValue(settings$.preferH264)
   const clickbaitThumbnail = useValue(settings$.clickbaitThumbnail)
-
 
   const syncUserStylesToWebview = useCallback(() => {
     if (!readyRef.current) return
@@ -289,7 +270,6 @@ const DesktopTabView: React.FC<{
   }, [clickbaitThumbnail, preferH264])
 
   return (
-
     <View
       pointerEvents={isActive ? 'auto' : 'none'}
       style={[StyleSheet.absoluteFill, { opacity: isActive ? 1 : 0, zIndex: isActive ? 1 : 0 }]}
@@ -422,10 +402,9 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
     if (!isWeb && !ui$.url.get()) {
       ui$.url.set(isYTMusic ? 'https://music.youtube.com' : isWeb ? 'https://www.youtube.com' : 'https://m.youtube.com')
     }
-    }, [ ])
+  }, [])
 
   useEffect(() => {
-     [
     auth$.plan.set(me?.plan)
     const runSync = () => {
       void syncSupabase().catch((error) => {
@@ -462,7 +441,6 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
         const webview = ui$.webview.get() || nativeRef.current
         restoreLastPlaying(webview)
         if (!isWeb) {
-           [ <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
           toggleShorts(hideShorts)
           syncUserStylesToWebview()
           syncBlocklistToWebview()
@@ -563,7 +541,6 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
   }, [])
 
   useEffect(() => {
-   
     const webview = nativeRef.current
     if (webview) {
       ui$.webview.set(ObservableHint.opaque(webview))
@@ -628,9 +605,6 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
 
   return (
     <>
-     
-          
-            
       <View
         className={clsx(
           'flex-1 h-full lg:flex-row overflow-hidden',
@@ -638,7 +612,6 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
         )}
       >
         <NouHeader getNoutube={getNoutube} />
-        
         {nIf(isWeb, <SettingsModal />)}
         {isWeb ? (
           <View className="relative flex-1 min-h-0">
