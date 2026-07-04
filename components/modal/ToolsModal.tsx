@@ -128,7 +128,7 @@ export const ToolsModal = () => {
 
    
   return (
-  1111111111111,
+  
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
