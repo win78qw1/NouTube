@@ -36,10 +36,10 @@ import { WebView } from 'react-native-webview';
 import Iframe from 'react-iframe';
 import React from 'react';
 
-111111111111111111
+
 let restored = false
 const logger = createLogger('sync')
-22222222222222222
+
 const onScroll = ({
   dy,
   y,
