@@ -41,13 +41,13 @@ export const ToolsModal = () => {
   const loadingUrlRef = useRef('')
   const isDark = useColorScheme() !== 'light'
   const effectiveDownloadPath = downloadPath || resolvedDownloadsPath
-111111111111111
+
 
 
   const onClose = () => {
     ui$.toolsModalOpen.set(false)
     ui$.toolsModalUrl.set('')
-      222222222222222
+      
   }
 
   const loadFormats = useCallback((targetUrl: string) => {
@@ -56,7 +56,7 @@ export const ToolsModal = () => {
     setFormats([])
     setParsedTitle('')
     setErrorMsg('')
-    3333333333
+    
     mainClient
       .listFormats(targetUrl)
       .then((result) => {
