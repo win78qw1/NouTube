@@ -49,7 +49,6 @@ const onScroll = ({
 }: {
   dy?: number
   y?: number
-  33333333333
   autoHideHeader: boolean
   hideToolbarWhenScrolled: boolean
 }) => {
