@@ -43,12 +43,13 @@ const logger = createLogger('sync')
 const onScroll = ({
   dy,
   y,
-  33333333333
+  
   autoHideHeader,
   hideToolbarWhenScrolled,
 }: {
   dy?: number
   y?: number
+  33333333333
   autoHideHeader: boolean
   hideToolbarWhenScrolled: boolean
 }) => {
