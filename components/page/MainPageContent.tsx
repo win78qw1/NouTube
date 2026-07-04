@@ -423,8 +423,7 @@ export const MainPageContent: React.FC<{ contentJs: string }> = ({ contentJs }) 
     if (!isWeb && !ui$.url.get()) {
       ui$.url.set(isYTMusic ? 'https://music.youtube.com' : isWeb ? 'https://www.youtube.com' : 'https://m.youtube.com')
     }
-    }, [ <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
- ])
+    }, [ ])
 
   useEffect(() => {
      [
