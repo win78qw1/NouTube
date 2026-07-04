@@ -64,13 +64,13 @@ export const ToolsModal = () => {
         setFormats(result.formats)
         setParsedTitle(result.title)
         setPhase('choosing')
-        44444444444
+       
       })
       .catch((err: any) => {
         if (loadingUrlRef.current !== targetUrl) return
         setErrorMsg(err?.message || t('modals.failedToLoadFormats'))
         setPhase('error')
-        555555555555
+        
       })
   }, [])
 
@@ -128,13 +128,14 @@ export const ToolsModal = () => {
 
    
   return (
-  
+  1111111111111
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
+          22222222222222222
           <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
         </View>
-
+33333333333333333
         <View className="gap-1">
          [ <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
