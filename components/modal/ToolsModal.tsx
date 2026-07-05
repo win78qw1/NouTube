@@ -147,20 +147,21 @@ export const ToolsModal = () => {
               setUrl(v)
               setPhase('idle')
               setFormats([])
-              2222222222222222222222222222222222
+             
             }}
             onSubmitEditing={() => {
               const trimmed = url.trim()
               if (trimmed) loadFormats(trimmed)
-              111111111111111111111111111111111111
+              
             }}
             returnKeyType="go"
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
+                2222222222222222222222222222222222
           />
-           
+           111111111111111111
         </View>
-  
+  333333333333333333333
         {nIf(
           !isAndroid && (phase === 'idle' || phase === 'choosing'),
           <View className="gap-1">
