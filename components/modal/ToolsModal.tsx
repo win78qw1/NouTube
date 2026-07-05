@@ -146,7 +146,7 @@ export const ToolsModal = () => {
             onChangeText={(v) => {
               setUrl(v)
               setPhase('idle')
-              setFormats([])
+              setFormats([2222222222222222222222222222222222])
             }}
             onSubmitEditing={() => {
               const trimmed = url.trim()
