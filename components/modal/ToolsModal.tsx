@@ -132,13 +132,14 @@ export const ToolsModal = () => {
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
-          22222222222222222
+         
           <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
         </View>
-33333333333333333
+
         <View className="gap-1">
          [ <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
+          <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
           <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
             value={url}
