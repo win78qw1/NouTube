@@ -167,14 +167,17 @@ export const ToolsModal = () => {
        2222222222222222222222222222222222,
           <View className="gap-1">
             <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">{t('modals.folder')}</NouText>
+            44444444444444444444
             <Pressable
               className="flex-row items-center gap-2 rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 active:bg-zinc-100 dark:active:bg-zinc-800"
               onPress={async () => {
                 const picked = await mainClient.selectFolder()
+                555555555555555555555555555
                 if (picked) settings$.downloadPath.set(picked)
               }}
             >
               <NouText className="flex-1 text-sm text-zinc-700 dark:text-zinc-300" numberOfLines={1}>
+                6666666666666666666
                 {effectiveDownloadPath || t('modals.downloadsFolder')}
               </NouText>
               <NouText className="text-xs text-zinc-400 dark:text-zinc-500">{t('buttons.browse')}</NouText>
