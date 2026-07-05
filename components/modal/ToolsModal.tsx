@@ -164,7 +164,7 @@ export const ToolsModal = () => {
   333333333333333333333
         {nIf(
           !isAndroid && (phase === 'idle' || phase === 'choosing'),
-       2222222222222222222222222222222222
+       2222222222222222222222222222222222,
           <View className="gap-1">
             <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">{t('modals.folder')}</NouText>
             <Pressable
