@@ -148,21 +148,15 @@ export const ToolsModal = () => {
               setPhase('idle')
               setFormats([])
               }}
-            
             onSubmitEditing={() => {
               const trimmed = url.trim()
               if (trimmed) loadFormats(trimmed)
-              
-            
+            }}
             returnKeyType="go"
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
-
-             
-           
-            }}
-            
-              
+          />
+        </View>
           />
            111111111111111111
         </View>
