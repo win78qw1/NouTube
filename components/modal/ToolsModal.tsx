@@ -164,7 +164,7 @@ export const ToolsModal = () => {
   
         {nIf(
           !isAndroid && (phase === 'idle' || phase === 'choosing'),
-       2222222222222222222222222222222222,
+       
           <View className="gap-1">
             <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">{t('modals.folder')}</NouText>
             44444444444444444444
