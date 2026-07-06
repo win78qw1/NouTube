@@ -160,7 +160,8 @@ export const ToolsModal = () => {
 
              
             returnKeyType="go"
-            placeholder="https://www.youtube.com/watch?v=..."
+            placeholder="https://www.youtube.com/watch?v=..."}
+            }}
             
               
           />
