@@ -139,15 +139,14 @@ export const ToolsModal = () => {
         <View className="gap-1">
          [ 
           <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">URL</NouText>
-          
-             <TextInput
+          <TextInput
             className="rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 text-sm text-zinc-900 dark:text-zinc-100"
             value={url}
             onChangeText={(v) => {
               setUrl(v)
               setPhase('idle')
               setFormats([])
-              }}
+            }}
             onSubmitEditing={() => {
               const trimmed = url.trim()
               if (trimmed) loadFormats(trimmed)
@@ -156,10 +155,6 @@ export const ToolsModal = () => {
             placeholder="https://www.youtube.com/watch?v=..."
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
           />
-        </View>
-       
-          />
-           
         </View>
   
         {nIf(
