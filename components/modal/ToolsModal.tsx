@@ -147,7 +147,7 @@ export const ToolsModal = () => {
               setUrl(v)
               setPhase('idle')
               setFormats([])
-             
+              }}
             
             onSubmitEditing={() => {
               const trimmed = url.trim()
