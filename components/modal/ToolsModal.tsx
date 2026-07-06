@@ -161,7 +161,7 @@ export const ToolsModal = () => {
              
             returnKeyType="go"
             placeholder="https://www.youtube.com/watch?v=..."
-            placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
+            
               
           />
            111111111111111111
