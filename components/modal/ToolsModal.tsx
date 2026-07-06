@@ -157,8 +157,9 @@ export const ToolsModal = () => {
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
           />
         </View>
+        111111111111111111
           />
-           111111111111111111
+           
         </View>
   333333333333333333333
         {nIf(
