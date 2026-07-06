@@ -161,7 +161,7 @@ export const ToolsModal = () => {
           />
            
         </View>
-  333333333333333333333
+  
         {nIf(
           !isAndroid && (phase === 'idle' || phase === 'choosing'),
        2222222222222222222222222222222222,
@@ -183,6 +183,7 @@ export const ToolsModal = () => {
               <NouText className="text-xs text-zinc-400 dark:text-zinc-500">{t('buttons.browse')}
               777777777777777777
               </NouText>
+              333333333333333333333
             </Pressable>
           </View>,
         )}
