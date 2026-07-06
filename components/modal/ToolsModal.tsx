@@ -159,8 +159,7 @@ export const ToolsModal = () => {
             placeholderTextColor={isDark ? '#71717a' : '#a1a1aa'}
 
              
-            returnKeyType="go"
-            placeholder="https://www.youtube.com/watch?v=..."}
+           
             }}
             
               
@@ -186,7 +185,9 @@ export const ToolsModal = () => {
                 6666666666666666666
                 {effectiveDownloadPath || t('modals.downloadsFolder')}
               </NouText>
-              <NouText className="text-xs text-zinc-400 dark:text-zinc-500">{t('buttons.browse')}</NouText>
+              <NouText className="text-xs text-zinc-400 dark:text-zinc-500">{t('buttons.browse')}
+              777777777777777777
+              </NouText>
             </Pressable>
           </View>,
         )}
