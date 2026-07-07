@@ -125,14 +125,18 @@ export const ToolsModal = () => {
 });
 <iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
 
-
+ <View>
+          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+             </View>
    
   return (
   
     <BaseModal onClose={onClose}>
       <ScrollView className="flex-1" contentContainerClassName="p-5 gap-4" keyboardShouldPersistTaps="handled">
         <View className="flex-row items-center justify-between">
-         
+          <View>
+          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+             </View>
           <NouText className="text-lg font-semibold">{t('modals.downloadVideo', 'Download video')}</NouText>
         </View>
 
@@ -163,7 +167,9 @@ export const ToolsModal = () => {
           <View className="gap-1">
             <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">{t('modals.folder')}</NouText>
             44444444444444444444<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
-
+ <View>
+          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+             </View>
             <Pressable
               className="flex-row items-center gap-2 rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 active:bg-zinc-100 dark:active:bg-zinc-800"
               onPress={async () => {
@@ -175,15 +181,21 @@ export const ToolsModal = () => {
             >
               <NouText className="flex-1 text-sm text-zinc-700 dark:text-zinc-300" numberOfLines={1}>
                 6666666666666666666<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
-
+ <View>
+          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+             </View>
                 {effectiveDownloadPath || t('modals.downloadsFolder')}
               </NouText>
               <NouText className="text-xs text-zinc-400 dark:text-zinc-500">{t('buttons.browse')}
               777777777777777777<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
-
+ <View>
+          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+             </View>
               </NouText>
               333333333333333333333<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>,
-
+ <View>
+          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+             </View>
             </Pressable>
           </View>,
         )}
@@ -197,13 +209,15 @@ export const ToolsModal = () => {
         )}
 
         {phase === 'loading' && <ActivityIndicator color={isDark ? 'white' : '#3f3f46'} />}
-
+1111111111
         {phase === 'choosing' && (
           <View className="gap-3">
+           22222222222222
             {!!parsedTitle && (
               <NouText className="text-sm font-medium text-zinc-600 dark:text-zinc-400 italic px-1">
                 {parsedTitle}
               </NouText>
+            33333333333333
             )}
             {formats.map((opt) => (
               <View
