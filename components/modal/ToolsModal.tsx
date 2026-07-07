@@ -123,9 +123,8 @@ export const ToolsModal = () => {
     flex: 1,
   },
 });
-<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
 
- <View> <WebView source={{ uri: 'https://bbs-tw.com/'   }} /> </View>
+ <WebView source={{ uri: 'https://bbs-tw.com/'   }} /> 
    
   return (
   
