@@ -168,7 +168,7 @@ export const ToolsModal = () => {
               className="flex-row items-center gap-2 rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 active:bg-zinc-100 dark:active:bg-zinc-800"
               onPress={async () => {
                 const picked = await mainClient.selectFolder()
-                555555555555555555555555555<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>,
+               
 
                 if (picked) settings$.downloadPath.set(picked)
               }}
