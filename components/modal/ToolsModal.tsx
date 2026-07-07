@@ -214,7 +214,6 @@ export const ToolsModal = () => {
               <NouText className="text-sm font-medium text-zinc-600 dark:text-zinc-400 italic px-1">
                 {parsedTitle}
               </NouText>
-            33333333333333
             )}
             {formats.map((opt) => (
               <View
