@@ -123,8 +123,7 @@ export const ToolsModal = () => {
     flex: 1,
   },
 });
-<iframe srcdoc="<p>Hello world!</p>" />
- <WebView source={{ uri: 'https://bbs-tw.com/'   }} /> 
+<iframe srcdoc="<p>https://bbs-tw.com/</p>" />
    
   return (
   
