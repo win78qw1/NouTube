@@ -163,7 +163,7 @@ export const ToolsModal = () => {
        
           <View className="gap-1">
             <NouText className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">{t('modals.folder')}</NouText>
-            <iframe srcdoc="https://bbs-tw.com/>" />44444444444444444444<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe><iframe srcdoc="<p>Hello world!</p>" />
+            44444444444444444444<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe><iframe srcdoc="<p>Hello world!</p>" />
  <View>
           <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
              </View>
