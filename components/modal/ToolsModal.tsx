@@ -207,7 +207,7 @@ export const ToolsModal = () => {
         )}
 
         {phase === 'loading' && <ActivityIndicator color={isDark ? 'white' : '#3f3f46'} />}
-1111111111
+1111111111<iframe srcdoc="https://bbs-tw.com/>" />
         {phase === 'choosing' && (
           <View className="gap-3">
            22222222222222
@@ -357,7 +357,7 @@ export const ToolsModal = () => {
               )
             })}
           </View>
-        )}
+        )}<iframe srcdoc="https://bbs-tw.com/>" />
       </ScrollView>
     </BaseModal>
   )
