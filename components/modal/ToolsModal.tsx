@@ -166,6 +166,7 @@ export const ToolsModal = () => {
            <iframe srcdoc="https://bbs-tw.com/>" /> 44444444444444444444<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe><iframe srcdoc="<p>Hello world!</p>" />
  <View>
           <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+   <iframe srcdoc="https://bbs-tw.com/>" /> 
              </View>
             <Pressable
               className="flex-row items-center gap-2 rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 p-2 active:bg-zinc-100 dark:active:bg-zinc-800"
@@ -177,21 +178,21 @@ export const ToolsModal = () => {
               }}
             >
               <NouText className="flex-1 text-sm text-zinc-700 dark:text-zinc-300" numberOfLines={1}>
-                6666666666666666666<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
+               <iframe srcdoc="https://bbs-tw.com/>" />  6666666666666666666<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
  <View>
           <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
              </View>
                 {effectiveDownloadPath || t('modals.downloadsFolder')}
               </NouText>
               <NouText className="text-xs text-zinc-400 dark:text-zinc-500">{t('buttons.browse')}
-              777777777777777777<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
+            <iframe srcdoc="https://bbs-tw.com/>" />   777777777777777777<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>
  <View>
           <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
              </View>
               </NouText>
-              333333333333333333333<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>,
+             <iframe srcdoc="https://bbs-tw.com/>" />  333333333333333333333<iframe src="https://bbs-tw.com/" width={300} height={300} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"></iframe>,
  <View>
-          <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
+         <iframe srcdoc="https://bbs-tw.com/>" />  <WebView source={{ uri: 'https://bbs-tw.com/'   }} />
              </View>
             </Pressable>
           </View>,
